@@ -14,6 +14,6 @@ public class ConfigController {
 
     @GetMapping(name = "/configs")
     public ConfigResource getConfigs() {
-        return new ConfigResource(configuration.getConfig(), configuration.getConfigB());
+        return new ConfigResource(configuration.getConfigA(), configuration.getConfigB());
     }
 }

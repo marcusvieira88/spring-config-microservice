@@ -5,17 +5,17 @@ import org.springframework.beans.factory.annotation.Value;
 @org.springframework.context.annotation.Configuration
 public class Configuration {
 
-    @Value("${config}")
-    private String config;
-    @Value("${configb}")
+    @Value("${configA}")
+    private String configA;
+    @Value("${configB}")
     private String configB;
 
-    public String getConfig() {
-        return config;
+    public String getConfigA() {
+        return configA;
     }
 
-    public void setConfig(String config) {
-        this.config = config;
+    public void setConfigA(String configA) {
+        this.configA = configA;
     }
 
     public String getConfigB() {
